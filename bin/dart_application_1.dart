@@ -8,8 +8,9 @@ void main(List<String> arguments) {
 
 List<String> printString(String str) {
   List<String> output = [];
-  for (int i = 0; i < str.length - 1; i++) {
-    if (str[i] == 'a' || str[i] == 'd' || str[i] == 'e' || str[i] == 'o') {
+  for (int i = 0; i < str.length; i++) {
+    if (i < str.length - 1 &&
+        (str[i] == 'a' || str[i] == 'd' || str[i] == 'e' || str[i] == 'o')) {
       bool res = checkVieLetter(first: str[i], second: str[i + 1]);
       String letter = str[i];
       if (res) {
@@ -21,9 +22,7 @@ List<String> printString(String str) {
       output.add(str[i]);
     }
   }
-  if (str[str.length - 1] == "w") {
-    output.add(str[str.length - 1]);
-  }
+
   return output;
 }
 
@@ -39,4 +38,5 @@ bool checkVieLetter({String? first, String? second}) {
       return second == "e";
     default:
       return false;
-}}
+  }
+}
