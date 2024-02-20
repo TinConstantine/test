@@ -30,8 +30,6 @@ List<String> printString(String str) {
 }
 
 bool checkVieLetter({String? first, String? second}) {
-
-
   switch (first) {
     case "a":
       return second == "a" || second == "w";
@@ -43,5 +41,4 @@ bool checkVieLetter({String? first, String? second}) {
       return second == "e";
     default:
       return false;
-e" && second == "e");
 }
