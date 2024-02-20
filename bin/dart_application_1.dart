@@ -30,16 +30,7 @@ List<String> printString(String str) {
 }
 
 bool checkVieLetter({String? first, String? second}) {
-  // if (first == "a" && (second == "a" || second == "w")) {
-  //   return true;
-  // } else if (first == "d" && second == "d") {
-  //   return true;
-  // } else if (first == "o" && (second == "o" || second == "w")) {
-  //   return true;
-  // } else if (first == "e" && second == "e") {
-  //   return true;
-  // }
-  // return false;
+
 
   switch (first) {
     case "a":
@@ -52,9 +43,5 @@ bool checkVieLetter({String? first, String? second}) {
       return second == "e";
     default:
       return false;
-  }
-  // return (first == "a" && second == "a" || second == "w") ||
-  //     (first == "d" && second == "d") ||
-  //     (first == "o" && second == "o" || second == "w") ||
-  //     (first == "e" && second == "e");
+e" && second == "e");
 }
