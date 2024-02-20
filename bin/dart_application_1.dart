@@ -13,9 +13,7 @@ List<String> printString(String str) {
       bool res = checkVieLetter(first: str[i], second: str[i + 1]);
       String letter = str[i];
       if (res) {
-        print("letter: $letter");
         letter += str[i + 1];
-        print("letter: $letter");
         output.add(letter);
         i++;
       }
